@@ -1,0 +1,7 @@
+﻿namespace GTBankCardInterfaceApp
+{
+    class PinPadResult
+    {
+
+    }
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTBankCardInterfaceApp", "GTBankCardInterfaceApp\GTBankCardInterfaceApp.csproj", "{64DF86B8-11C7-454E-B6E4-190D4C19B080}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Debug|x86.ActiveCfg = Debug|x86
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Debug|x86.Build.0 = Debug|x86
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Release|x86.ActiveCfg = Release|x86
+		{64DF86B8-11C7-454E-B6E4-190D4C19B080}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29FD0D1A-BCC4-40EE-9166-1F14683D319C}
+	EndGlobalSection
+EndGlobal

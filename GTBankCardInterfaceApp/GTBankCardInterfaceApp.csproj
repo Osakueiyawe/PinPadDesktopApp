@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64DF86B8-11C7-454E-B6E4-190D4C19B080}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTBankCardInterfaceApp</RootNamespace>
+    <AssemblyName>GTBankCardInterfaceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Deploy\PinPadApplication\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\10.0.145\c%24\Deploy\PinPadApplication\</InstallUrl>
+    <ProductName>GTBankCardInterfaceApp</ProductName>
+    <PublisherName>GTBANK</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DC3E064AC9AC24FD1FFFC232DFA7007A276DE28F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GTBankCardInterfaceApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Users\jimah.buhari\Downloads\CrystalDecisions.Enterprise.Framework\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\x86\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonControls.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Controllers.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewExtension, Version=1.1.1.0, Culture=neutral, PublicKeyToken=81fb70b94a00c054, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DataGridViewExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Dermalog.AFIS.FingerCode3, Version=3.3.1.1843, Culture=neutral, PublicKeyToken=97cac07b8409e999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DERMALOG\ComponentSystem\.Net\v2.0\Dermalog.AFIS.FingerCode3.dll</HintPath>
+    </Reference>
+    <Reference Include="Dermalog.Afis.ImageContainer, Version=2.5.0.1827, Culture=neutral, PublicKeyToken=97cac07b8409e999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DERMALOG\ComponentSystem\.Net\v2.0\Dermalog.Afis.ImageContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="Dermalog.Afis.ImageContainer.RawImageHelperForms, Version=2.5.0.1827, Culture=neutral, PublicKeyToken=97cac07b8409e999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DERMALOG\ComponentSystem\.Net\v2.0\Dermalog.Afis.ImageContainer.RawImageHelperForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Dermalog.Imaging.Capturing, Version=3.3.0.1707, Culture=neutral, PublicKeyToken=d215f80b62562526, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DERMALOG\ComponentSystem\.Net\v2.0\Dermalog.Imaging.Capturing.dll</HintPath>
+    </Reference>
+    <Reference Include="DGVEExcelExporting, Version=1.1.1.0, Culture=neutral, PublicKeyToken=81fb70b94a00c054, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DGVEExcelExporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DGVEHtmlExporting, Version=1.1.1.0, Culture=neutral, PublicKeyToken=81fb70b94a00c054, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DGVEHtmlExporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DGVEPdfExporting, Version=1.1.1.0, Culture=neutral, PublicKeyToken=81fb70b94a00c054, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DGVEPdfExporting.dll</HintPath>
+    </Reference>
+    <Reference Include="EncryptionLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.ECRCommXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\x86\Debug\Interop.ECRCommXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86" />
+    <Reference Include="Leadtools.Codecs, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86" />
+    <Reference Include="Leadtools.Codecs.Abi, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\Leadtools.Codecs.Abi.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86" />
+    <Reference Include="Leadtools.Codecs.Fax, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\Leadtools.Codecs.Fax.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Tif, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86" />
+    <Reference Include="Leadtools.Drawing, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\Leadtools.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.WinForms, Version=17.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\Leadtools.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PointOfService, Version=1.14.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.PointOfService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PointOfService.ControlBase, Version=1.14.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.PointOfService.ControlBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Inetpub\wwwroot\FTUPortallive\bin\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminUser.cs" />
+    <Compile Include="AppDevService.cs" />
+    <Compile Include="ApproverSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproverSV.Designer.cs">
+      <DependentUpon>ApproverSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveTransactions.Designer.cs">
+      <DependentUpon>ApproveTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveDebitTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveDebitTransactions.Designer.cs">
+      <DependentUpon>ApproveDebitTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiometricImplementation\Model\CustomerDetailsFromPhoneNumber.cs" />
+    <Compile Include="BiometricImplementation\Model\FingerPrintVerificationRequest.cs" />
+    <Compile Include="BiometricImplementation\Model\FingerPrintVerificationResponse.cs" />
+    <Compile Include="DatabaseConnection\BasisConnect.cs" />
+    <Compile Include="FastTrackDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastTrackDeposit.Designer.cs">
+      <DependentUpon>FastTrackDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastTrackWithdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastTrackWithdrawal.Designer.cs">
+      <DependentUpon>FastTrackWithdrawal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAnalysis.Designer.cs">
+      <DependentUpon>CashAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardLessDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardLessDeposit.Designer.cs">
+      <DependentUpon>CardLessDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardLessWithdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardLessWithdrawal.Designer.cs">
+      <DependentUpon>CardLessWithdrawal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTransactionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerTransactionHistory.Designer.cs">
+      <DependentUpon>CustomerTransactionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encryption.cs" />
+    <Compile Include="ErrHandler.cs" />
+    <Compile Include="BiometricImplementation\FingerPrint.cs" />
+    <Compile Include="FingerPrintMobileNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FingerPrintMobileNumber.Designer.cs">
+      <DependentUpon>FingerPrintMobileNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="MessageBoxHelper.cs" />
+    <Compile Include="MsgBox.cs" />
+    <Compile Include="PostOfflineApprovedDebitTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostOfflineApprovedDebitTransactions.Designer.cs">
+      <DependentUpon>PostOfflineApprovedDebitTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\CardAuth.cs" />
+    <Compile Include="ConvertToNaira.cs" />
+    <Compile Include="CardHolderDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardHolderDeposit.Designer.cs">
+      <DependentUpon>CardHolderDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditTrans.Designer.cs">
+      <DependentUpon>CreditTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetail.Designer.cs">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexEncoding.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLogo.Designer.cs">
+      <DependentUpon>ManageLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PinPadDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PinPadDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PinPadResult.cs" />
+    <Compile Include="PrintPendingReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPendingReceipt.Designer.cs">
+      <DependentUpon>PrintPendingReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApproverSV.resx">
+      <DependentUpon>ApproverSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveTransactions.resx">
+      <DependentUpon>ApproveTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardHolderDeposit.resx">
+      <DependentUpon>CardHolderDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveDebitTransactions.resx">
+      <DependentUpon>ApproveDebitTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastTrackDeposit.resx">
+      <DependentUpon>FastTrackDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastTrackWithdrawal.resx">
+      <DependentUpon>FastTrackWithdrawal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAnalysis.resx">
+      <DependentUpon>CashAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardLessDeposit.resx">
+      <DependentUpon>CardLessDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardLessWithdrawal.resx">
+      <DependentUpon>CardLessWithdrawal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerTransactionHistory.resx">
+      <DependentUpon>CustomerTransactionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FingerPrintMobileNumber.resx">
+      <DependentUpon>FingerPrintMobileNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostOfflineApprovedDebitTransactions.resx">
+      <DependentUpon>PostOfflineApprovedDebitTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditTrans.resx">
+      <DependentUpon>CreditTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetail.resx">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLogo.resx">
+      <DependentUpon>ManageLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPendingReceipt.resx">
+      <DependentUpon>PrintPendingReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Receipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetReceipt.resx">
+      <DependentUpon>ResetReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionHistory.resx">
+      <DependentUpon>TransactionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="GTBankCardInterfaceApp_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResetReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetReceipt.Designer.cs">
+      <DependentUpon>ResetReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secure.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="TimerExample.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionHistory.Designer.cs">
+      <DependentUpon>TransactionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EncryptionLib.dll" />
+    <Content Include="NoImage.bmp" />
+    <Content Include="readme.txt" />
+    <Content Include="Resources\gtb_logo.ico" />
+    <None Include="PinPadDataSet.xsc">
+      <DependentUpon>PinPadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PinPadDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PinPadDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PinPadDataSet.xss">
+      <DependentUpon>PinPadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\gtb-logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="EncryptionLib.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
